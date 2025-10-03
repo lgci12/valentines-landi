@@ -66,9 +66,9 @@
 </head>
 <body>
     <div id="content">
-        <h2 id="question">Would you date me?</h2>
-        <button id="yesButton">YES</button>
-        <button id="noButton">NO</button>
+        <h2 id="question">Aceita sair comigo?</h2>
+        <button id="yesButton">SIM</button>
+        <button id="noButton">NÃO</button>
         <p id="message"></p>
     </div>
 
@@ -103,15 +103,15 @@
                 document.getElementById('message').style.left = this.style.left;
                 document.getElementById('message').style.top = parseFloat(this.style.top) + 50 + 'px';
             } else if (noClickCount == 15) {
-                document.getElementById('message').innerText = 'Oh No! You broke the button :c';
+                document.getElementById('message').innerText = 'Putss, você quebrou o botão :c';
                 this.disabled = true;
                 this.style.color = grey;
-                document.getElementById('message').innerText = 'Oh No! You broke the button :c';
+                document.getElementById('message').innerText = 'Putss, você quebrou o botão :c';
             }
         });
 
         document.getElementById('yesButton').addEventListener('click', function() {                 //YESSSS button
-            document.getElementById('question').innerText = 'YIEEEEE SAN DATE NATIN? OTW';
+            document.getElementById('question').innerText = 'SIMMMMM, TE BUSCO AMANHÃ AS 20H';
             for (var i = 0; i < 100; i++) {
                 var heart = document.createElement('div');
                 heart.className = 'heart';
